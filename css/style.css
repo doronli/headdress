@@ -12,12 +12,17 @@
 }
 
 /* first container */
-#first-container .carousel-item img{
-    height: 365px;
+.carousel-item img,
+.evenning-look-image,
+.half-evening-image{
+    height: 450px;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
-
+.half-evening-image{
+    height: 217px;
+}
 a.buy-now{
     border: 2px solid black;
     border-radius: 96px;
@@ -36,7 +41,13 @@ a.buy-now:hover{
 a:hover{
     text-decoration: unset;
 }
-
+.headdress{
+    height: 230px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+}
 @media screen and (min-width:600px){
     .header{
         height: 400px;
@@ -54,5 +65,11 @@ a:hover{
     .header .title-header{
         font-size: 43px;
         margin-top: 35px;
+    }
+    .mt-mobile-5{
+        margin-top: 2rem;
+    }
+    a.buy-now{
+        font-size: 17px;
     }
 }
